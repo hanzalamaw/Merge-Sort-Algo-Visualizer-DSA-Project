@@ -10,9 +10,6 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 <br />
-
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/algorithms/algorithms.png" width="120" alt="Algorithms">
-
 *An interactive, step-by-step visualization of the Merge Sort algorithm*
 
 ---
