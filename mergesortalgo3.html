@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merge Sort Visualizer</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mergesortalgo3.css" />
+</head>
+<body>
+  <header>
+    <h1>Merge Sort <span>Visualizer</span></h1>
+    <p class="subtitle">Watch the divide & conquer algorithm in action</p>
+    <span class="complexity">⏱ Time Complexity: O(n log n)</span>
+  </header>
+
+  <section class="controls-wrapper">
+    <div class="controls">
+      <div class="control-group">
+        <label for="size">Array Size</label>
+        <div class="input-wrapper">
+          <input type="range" id="size" min="4" max="12" value="8" />
+          <output id="sizeOut">8 items</output>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="speed">Animation Speed</label>
+        <div class="input-wrapper">
+          <input type="range" id="speed" min="1" max="100" value="50" step="1" />
+          <output id="speedOut">5x</output>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="randomBtn" class="btn btn-secondary">🎲 Randomize</button>
+      <button id="startBtn" class="btn btn-primary">▶ Start Sorting</button>
+      <button id="pauseBtn" class="btn btn-warning" disabled>⏸ Pause</button>
+      <button id="resetBtn" class="btn btn-secondary" disabled>↺ Reset</button>
+    </div>
+  </section>
+
+  <main class="stage">
+    <div class="status-bar">
+      <div class="status">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText">Ready</span>
+      </div>
+      <span class="phase" id="phaseText">IDLE</span>
+    </div>
+    <div id="treeContainer" class="tree-container"></div>
+  </main>
+
+  <section class="logs-wrapper">
+    <div class="logs-header">
+      <h3>Live Activity Log</h3>
+      <button id="clearLogs" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Clear</button>
+    </div>
+    <div id="logsContainer" class="logs-container"></div>
+  </section>
+  <script src="mergesortalgo3-animations.js"></script>
+  <script src="megesortalgo3.js"></script>
+</body>
+</html>
